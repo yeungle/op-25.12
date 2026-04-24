@@ -22,21 +22,10 @@
 # Modify version number
 #sed -i "s/^VERSION_NUMBER:=.*/VERSION_NUMBER:=25.12-$(date +%Y%m%d)/" include/version.mk
 
-rm -rf feeds/luci/themes/luci-theme-argon
-rm -rf feeds/luci/themes/luci-theme-design
-rm -rf feeds/luci/applications/luci-app-adguardhome
-rm -rf feeds/packages/net/adguardhome
-rm -rf feeds/luci/applications/luci-app-openclash
-
 git clone --depth=1 https://github.com/kenzok8/small-package.git kenzok8-packages
 cp -rf kenzok8-packages/wrtbwmon package/wrtbwmon
 cp -rf kenzok8-packages/luci-app-wrtbwmon package/luci-app-wrtbwmon
-cp -rf kenzok8-packages/adguardhome package/adguardhome
-cp -rf kenzok8-packages/luci-app-adguardhome package/luci-app-adguardhome
 cp -rf kenzok8-packages/luci-app-eqos package/luci-app-eqos
-cp -rf kenzok8-packages/luci-app-systools package/luci-app-systools
-cp -rf kenzok8-packages/luci-lib-iform package/luci-lib-iform
-cp -rf kenzok8-packages/speedtestcli package/speedtestcli
 cp -rf kenzok8-packages/fastnet package/fastnet
 cp -rf kenzok8-packages/luci-app-fastnet package/luci-app-fastnet
 rm -rf kenzok8-packages
