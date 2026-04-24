@@ -11,5 +11,3 @@
 #
 
 # Uncomment a feed source
-#sed -i 's/src-git luci https:\/\/github.com\/coolsnowwolf\/luci.git;openwrt-23.05/src-git luci https:\/\/github.com\/coolsnowwolf\/luci.git;openwrt-25.12/g' ./feeds.conf.default
-#sed -i '/openwrt-23\.05/s/^#//; /openwrt-25\.12/s/^/#/' feeds.conf.default
