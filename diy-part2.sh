@@ -20,9 +20,10 @@
 #sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
 
 # Modify version number
-sed -i "s/^VERSION_NUMBER:=.*/VERSION_NUMBER:=25.12-$(date +%Y%m%d)/" include/version.mk
+#sed -i "s/^VERSION_NUMBER:=.*/VERSION_NUMBER:=25.12-$(date +%Y%m%d)/" include/version.mk
 
 rm -rf feeds/luci/themes/luci-theme-argon
+rm -rf feeds/luci/themes/luci-theme-design
 rm -rf feeds/luci/applications/luci-app-adguardhome
 rm -rf feeds/packages/net/adguardhome
 rm -rf feeds/luci/applications/luci-app-openclash
@@ -32,9 +33,12 @@ cp -rf kenzok8-packages/wrtbwmon package/wrtbwmon
 cp -rf kenzok8-packages/luci-app-wrtbwmon package/luci-app-wrtbwmon
 cp -rf kenzok8-packages/adguardhome package/adguardhome
 cp -rf kenzok8-packages/luci-app-adguardhome package/luci-app-adguardhome
+cp -rf kenzok8-packages/luci-app-eqos package/luci-app-eqos
 cp -rf kenzok8-packages/luci-app-systools package/luci-app-systools
 cp -rf kenzok8-packages/luci-lib-iform package/luci-lib-iform
 cp -rf kenzok8-packages/speedtestcli package/speedtestcli
+cp -rf kenzok8-packages/fastnet package/fastnet
+cp -rf kenzok8-packages/luci-app-fastnet package/luci-app-fastnet
 rm -rf kenzok8-packages
 
 git clone --depth=1 https://github.com/vernesong/OpenClash.git OpenClash-packages
@@ -48,6 +52,7 @@ cp -rf OpenAppFilter/open-app-filter package/open-app-filter
 rm -rf OpenAppFilter
 
 git clone --depth=1 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
+git clone --depth=1 -b js https://github.com/papagaye744/luci-theme-design package/luci-theme-design
 
 git clone --depth=1 https://github.com/linkease/istore istore
 cp -rf istore/luci/luci-app-store package/luci-app-store
@@ -77,5 +82,6 @@ cp -rf extra-ipk/op-homebox/luci-app-homebox package/luci-app-homebox
 rm -rf extra-ipk
 
 git clone --depth=1 https://github.com/jjm2473/luci-app-autotimeset.git package/luci-app-autotimeset
+
 #./scripts/feeds update -a
 #./scripts/feeds install -a
