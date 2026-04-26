@@ -31,6 +31,7 @@ rm -rf kenzok8-packages
 
 git clone --depth=1 https://github.com/linkease/nas-packages.git nas-packages
 cp -rf nas-packages/network/services/linkease package/linkease
+cp -rf nas-packages/network/services/linkmount package/linkmount
 cp -rf nas-packages/network/services/ddnsto package/ddnsto
 rm -rf nas-packages
 
