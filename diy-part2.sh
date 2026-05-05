@@ -50,7 +50,7 @@ cp -rf nas-packages-luci/luci/luci-app-linkease package/luci-app-linkease
 cp -rf nas-packages-luci/luci/luci-app-ddnsto package/luci-app-ddnsto
 rm -rf nas-packages-luci
 
-git clone --depth=1 https://github.com/jjm2473/luci-app-autotimeset.git package/luci-app-autotimeset
+#git clone --depth=1 https://github.com/jjm2473/luci-app-autotimeset.git package/luci-app-autotimeset
 
 #./scripts/feeds update -a
 #./scripts/feeds install -a
