@@ -5,6 +5,9 @@ config defaults
 	option forward 'REJECT'
 	option synflood_protect '1'
 	option fullcone '2'
+	option flow_offloading '1'
+	option flow_offloading_hw '1'
+	option tcpcca 'bbr'
 
 config zone
 	option name 'lan'
@@ -134,11 +137,30 @@ config rule
 config include
 	option path '/etc/firewall.user'
 
+config include 'mia'
+	option type 'script'
+	option path '/etc/mia.include'
+	option reload '1'
+
+config zone 'docker'
+	option input 'ACCEPT'
+	option output 'ACCEPT'
+	option forward 'ACCEPT'
+	option name 'docker'
+	list network 'docker'
+
 config include 'miniupnpd'
 	option type 'script'
 	option path '/usr/share/miniupnpd/firewall.include'
 	option family 'any'
 	option reload '1'
+
+config rule 'fastnet'
+	option name 'fastnet'
+	option target 'ACCEPT'
+	option src 'wan'
+	option proto 'tcp'
+	option dest_port '3200'
 
 config rule 'linkease'
 	option name 'linkease'
@@ -151,16 +173,4 @@ config include 'openclash'
 	option type 'script'
 	option path '/var/etc/openclash.include'
 	option reload '1'
-
-config include 'mia'
-	option type 'script'
-	option path '/etc/mia.include'
-	option reload '1'
-
-config zone 'docker'
-	option input 'ACCEPT'
-	option output 'ACCEPT'
-	option forward 'ACCEPT'
-	option name 'docker'
-	list network 'docker'
 
