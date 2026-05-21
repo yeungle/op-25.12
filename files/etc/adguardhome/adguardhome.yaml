@@ -152,7 +152,11 @@ filters:
     name: I don't care about cookies
     id: 1779322345
 whitelist_filters: []
-user_rules: []
+user_rules:
+  - '||dongqiudi.com^'
+  - '||api.dongqiudi.com^'
+  - '||static.dongqiudi.com^'
+  - '||img.dongqiudi.com^'
 dhcp:
   enabled: false
   interface_name: ""
@@ -226,4 +230,3 @@ os:
   user: ""
   rlimit_nofile: 0
 schema_version: 34
-
