@@ -2,6 +2,13 @@ http:
   pprof:
     port: 6060
     enabled: false
+  doh:
+    routes:
+      - GET /dns-query
+      - POST /dns-query
+      - GET /dns-query/{ClientID}
+      - POST /dns-query/{ClientID}
+    insecure_enabled: false
   address: 0.0.0.0:3000
   session_ttl: 720h
 users:
@@ -80,7 +87,6 @@ tls:
   port_dns_over_quic: 853
   port_dnscrypt: 0
   dnscrypt_config_file: ""
-  allow_unencrypted_doh: false
   certificate_chain: ""
   private_key: ""
   certificate_path: ""
@@ -110,13 +116,41 @@ filters:
     name: AdAway Default Blocklist
     id: 2
   - enabled: true
-    url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_29.txt
-    name: 'CHN: AdRules DNS List'
-    id: 1773466085
+    url: https://anti-ad.net/easylist.txt
+    name: anti-AD Filters
+    id: 1779322337
   - enabled: true
-    url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_21.txt
-    name: 'CHN: anti-AD'
-    id: 1773466086
+    url: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
+    name: CJX's Annoyance List
+    id: 1779322338
+  - enabled: true
+    url: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-ublock.txt
+    name: CJX's uBlock list
+    id: 1779322339
+  - enabled: true
+    url: https://easylist-downloads.adblockplus.org/easyprivacy.txt
+    name: EasyPrivacy 是隐私保护，不被跟踪
+    id: 1779322340
+  - enabled: true
+    url: https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt
+    name: ABP filters
+    id: 1779322341
+  - enabled: true
+    url: https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt
+    name: 乘风 广告过滤规则
+    id: 1779322342
+  - enabled: true
+    url: https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/mv.txt
+    name: 乘风 视频广告过滤规则
+    id: 1779322343
+  - enabled: true
+    url: https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/minority-mv.txt
+    name: 乘风 小众视频过滤规则
+    id: 1779322344
+  - enabled: true
+    url: https://www.i-dont-care-about-cookies.eu/abp/
+    name: I don't care about cookies
+    id: 1779322345
 whitelist_filters: []
 user_rules: []
 dhcp:
@@ -191,4 +225,5 @@ os:
   group: ""
   user: ""
   rlimit_nofile: 0
-schema_version: 33
+schema_version: 34
+
