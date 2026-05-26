@@ -38,9 +38,9 @@ cp -rf kenzok8-packages/fastnet package/fastnet
 cp -rf kenzok8-packages/luci-app-fastnet package/luci-app-fastnet
 rm -rf kenzok8-packages
 
-#git clone --depth=1 https://github.com/vernesong/OpenClash.git OpenClash-packages
-#cp -rf OpenClash-packages/luci-app-openclash package/luci-app-openclash
-#rm -rf OpenClash-packages
+git clone --depth=1 https://github.com/vernesong/OpenClash.git OpenClash-packages
+cp -rf OpenClash-packages/luci-app-openclash package/luci-app-openclash
+rm -rf OpenClash-packages
 
 git clone --depth=1 https://github.com/linkease/nas-packages.git nas-packages
 cp -rf nas-packages/network/services/linkease package/linkease
