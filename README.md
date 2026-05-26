@@ -7,3 +7,13 @@ docker run -d --name AdGuard-Home1 -v /opt/docker/AGH_Docker1:/opt/adguardhome/w
 最新增强版模型 Model-ML-Enhance.bin 使用方法：将 Model-ML-Enhance.bin 改名为 Model.bin： 1，openclash上传到：/etc/openclash
 
 ZashBoard 配置导入：https://gh-proxy.com/raw.githubusercontent.com/liandu2024/little/refs/heads/main/zashboard/zashboard-20250417.json
+
+git clone https://github.com/coolsnowwolf/lede
+
+cd lede
+
+./scripts/feeds update -a
+
+./scripts/feeds install -a
+
+make menuconfig
