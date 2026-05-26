@@ -43,13 +43,13 @@ cp -rf OpenClash-packages/luci-app-openclash package/luci-app-openclash
 rm -rf OpenClash-packages
 
 git clone --depth=1 https://github.com/linkease/nas-packages.git nas-packages
-cp -rf nas-packages/network/services/linkease package/linkease
-cp -rf nas-packages/network/services/linkmount package/linkmount
+#cp -rf nas-packages/network/services/linkease package/linkease
+#cp -rf nas-packages/network/services/linkmount package/linkmount
 cp -rf nas-packages/network/services/ddnsto package/ddnsto
 rm -rf nas-packages
 
 git clone --depth=1 https://github.com/linkease/nas-packages-luci.git nas-packages-luci
-cp -rf nas-packages-luci/luci/luci-app-linkease package/luci-app-linkease
+#cp -rf nas-packages-luci/luci/luci-app-linkease package/luci-app-linkease
 cp -rf nas-packages-luci/luci/luci-app-ddnsto package/luci-app-ddnsto
 rm -rf nas-packages-luci
 
