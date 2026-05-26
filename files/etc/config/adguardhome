@@ -1,9 +1,0 @@
-
-config adguardhome 'config'
-	option config_file '/etc/adguardhome/adguardhome.yaml'
-	option user 'adguardhome'
-	option group 'adguardhome'
-	option gc '0'
-	option maxprocs '0'
-	option memlimit '0'
-	option work_dir '/etc/adguardhome'
