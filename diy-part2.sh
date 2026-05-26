@@ -40,6 +40,9 @@ cp -rf kenzok8-packages/luci-app-wrtbwmon package/luci-app-wrtbwmon
 #cp -rf kenzok8-packages/luci-app-adguardhome package/luci-app-adguardhome
 cp -rf kenzok8-packages/fastnet package/fastnet
 cp -rf kenzok8-packages/luci-app-fastnet package/luci-app-fastnet
+cp -rf kenzok8-packages/linkease package/linkease
+cp -rf kenzok8-packages/linkmount package/linkmount
+cp -rf kenzok8-packages/luci-app-linkease package/luci-app-linkease
 rm -rf kenzok8-packages
 
 #git clone --depth=1 https://github.com/vernesong/OpenClash.git OpenClash-packages
