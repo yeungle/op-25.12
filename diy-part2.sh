@@ -45,6 +45,8 @@ cp -rf kenzok8-packages/linkmount package/linkmount
 cp -rf kenzok8-packages/luci-app-linkease package/luci-app-linkease
 rm -rf kenzok8-packages
 
+git clone --depth=1 -b openwrt-23.05 https://github.com/coolsnowwolf/luci package/luci-app-accesscontrol
+
 #git clone --depth=1 https://github.com/vernesong/OpenClash.git OpenClash-packages
 #cp -rf OpenClash-packages/luci-app-openclash package/luci-app-openclash
 #rm -rf OpenClash-packages
