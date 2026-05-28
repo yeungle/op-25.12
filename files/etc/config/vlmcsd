@@ -1,0 +1,6 @@
+
+config vlmcsd 'config'
+	option auto_activate '1'
+	option internet_access '0'
+	option enabled '1'
+
