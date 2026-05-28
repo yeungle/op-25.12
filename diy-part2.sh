@@ -47,6 +47,12 @@ rm -rf kenzok8-packages
 
 git clone --depth=1 -b openwrt-23.05 https://github.com/coolsnowwolf/luci package/luci-app-accesscontrol
 
+git clone --depth=1 https://github.com/destan19/OpenAppFilter.git OpenAppFilter
+cp -rf OpenAppFilter/luci-app-oaf package/luci-app-oaf
+cp -rf OpenAppFilter/oaf package/oaf
+cp -rf OpenAppFilter/open-app-filter package/open-app-filter
+rm -rf OpenAppFilter
+
 #git clone --depth=1 https://github.com/vernesong/OpenClash.git OpenClash-packages
 #cp -rf OpenClash-packages/luci-app-openclash package/luci-app-openclash
 #rm -rf OpenClash-packages
