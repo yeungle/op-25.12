@@ -22,8 +22,8 @@
 # Modify version number
 sed -i "s/^VERSION_NUMBER:=.*/VERSION_NUMBER:=25.12-$(date +%Y%m%d)/" include/version.mk
 
-#rm -rf feeds/luci/applications/luci-app-adguardhome
-#rm -rf feeds/packages/net/adguardhome
+rm -rf feeds/luci/applications/luci-app-adguardhome
+rm -rf feeds/packages/net/adguardhome
 #rm -rf package/feeds/packages/adguardhome
 #rm -rf package/feeds/luci/luci-app-adguardhome
 #rm -rf feeds/luci/applications/luci-app-openclash
