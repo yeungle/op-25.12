@@ -52,6 +52,8 @@ rm -rf kenzok8-packages
 
 git clone --depth=1 -b openwrt-23.05 https://github.com/coolsnowwolf/luci package/luci-app-accesscontrol
 
+git clone --depth=1 https://github.com/jjm2473/luci-app-autotimeset.git package/luci-app-autotimeset
+
 #git clone --depth=1 https://github.com/destan19/OpenAppFilter.git OpenAppFilter
 #cp -rf OpenAppFilter/luci-app-oaf package/luci-app-oaf
 #cp -rf OpenAppFilter/oaf package/oaf
@@ -73,7 +75,7 @@ git clone --depth=1 -b openwrt-23.05 https://github.com/coolsnowwolf/luci packag
 #cp -rf nas-packages-luci/luci/luci-app-ddnsto package/luci-app-ddnsto
 #rm -rf nas-packages-luci
 
-git clone --depth=1 https://github.com/jjm2473/luci-app-autotimeset.git package/luci-app-autotimeset
+
 
 #./scripts/feeds update -a
 #./scripts/feeds install -a
