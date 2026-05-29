@@ -43,6 +43,7 @@ cp -rf kenzok8-packages/luci-app-fastnet package/luci-app-fastnet
 cp -rf kenzok8-packages/linkease package/linkease
 cp -rf kenzok8-packages/linkmount package/linkmount
 cp -rf kenzok8-packages/luci-app-linkease package/luci-app-linkease
+cp -rf kenzok8-packages/luci-app-eqos package/luci-app-eqos
 rm -rf kenzok8-packages
 
 git clone --depth=1 -b openwrt-23.05 https://github.com/coolsnowwolf/luci package/luci-app-accesscontrol
@@ -68,7 +69,7 @@ rm -rf OpenAppFilter
 #cp -rf nas-packages-luci/luci/luci-app-ddnsto package/luci-app-ddnsto
 #rm -rf nas-packages-luci
 
-#git clone --depth=1 https://github.com/jjm2473/luci-app-autotimeset.git package/luci-app-autotimeset
+git clone --depth=1 https://github.com/jjm2473/luci-app-autotimeset.git package/luci-app-autotimeset
 
 #./scripts/feeds update -a
 #./scripts/feeds install -a
