@@ -26,7 +26,7 @@ rm -rf feeds/luci/applications/luci-app-adguardhome
 rm -rf feeds/packages/net/adguardhome
 #rm -rf package/feeds/packages/adguardhome
 #rm -rf package/feeds/luci/luci-app-adguardhome
-#rm -rf feeds/luci/applications/luci-app-openclash
+rm -rf feeds/luci/applications/luci-app-openclash
 #rm -rf package/feeds/luci/luci-app-openclash
 
 #git clone https://github.com/kenzok78/luci-app-adguardhome.git package/luci-app-adguardhome
