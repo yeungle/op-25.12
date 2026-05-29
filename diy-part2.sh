@@ -43,7 +43,6 @@ cp -rf kenzok8-packages/luci-app-fastnet package/luci-app-fastnet
 cp -rf kenzok8-packages/linkease package/linkease
 cp -rf kenzok8-packages/linkmount package/linkmount
 cp -rf kenzok8-packages/luci-app-linkease package/luci-app-linkease
-cp -rf kenzok8-packages/luci-app-eqos package/luci-app-eqos
 cp -rf kenzok8-packages/luci-app-openclash package/luci-app-openclash
 cp -rf kenzok8-packages/luci-app-oaf package/luci-app-oaf
 cp -rf kenzok8-packages/oaf package/oaf
