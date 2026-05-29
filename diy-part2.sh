@@ -43,7 +43,6 @@ cp -rf kenzok8-packages/luci-app-fastnet package/luci-app-fastnet
 cp -rf kenzok8-packages/linkease package/linkease
 cp -rf kenzok8-packages/linkmount package/linkmount
 cp -rf kenzok8-packages/luci-app-linkease package/luci-app-linkease
-cp -rf kenzok8-packages/luci-app-openclash package/luci-app-openclash
 cp -rf kenzok8-packages/luci-app-oaf package/luci-app-oaf
 cp -rf kenzok8-packages/oaf package/oaf
 cp -rf kenzok8-packages/open-app-filter package/open-app-filter
@@ -59,9 +58,9 @@ git clone --depth=1 https://github.com/jjm2473/luci-app-autotimeset.git package/
 #cp -rf OpenAppFilter/open-app-filter package/open-app-filter
 #rm -rf OpenAppFilter
 
-#git clone --depth=1 https://github.com/vernesong/OpenClash.git OpenClash-packages
-#cp -rf OpenClash-packages/luci-app-openclash package/luci-app-openclash
-#rm -rf OpenClash-packages
+git clone --depth=1 https://github.com/vernesong/OpenClash.git OpenClash-packages
+cp -rf OpenClash-packages/luci-app-openclash package/luci-app-openclash
+rm -rf OpenClash-packages
 
 #git clone --depth=1 https://github.com/linkease/nas-packages.git nas-packages
 #cp -rf nas-packages/network/services/linkease package/linkease
