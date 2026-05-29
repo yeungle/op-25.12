@@ -26,7 +26,7 @@ rm -rf feeds/luci/applications/luci-app-adguardhome
 rm -rf feeds/packages/net/adguardhome
 #rm -rf package/feeds/packages/adguardhome
 #rm -rf package/feeds/luci/luci-app-adguardhome
-rm -rf feeds/luci/applications/luci-app-openclash
+#rm -rf feeds/luci/applications/luci-app-openclash
 #rm -rf package/feeds/luci/luci-app-openclash
 
 #git clone https://github.com/kenzok78/luci-app-adguardhome.git package/luci-app-adguardhome
@@ -58,9 +58,9 @@ git clone --depth=1 -b openwrt-23.05 https://github.com/coolsnowwolf/luci packag
 #cp -rf OpenAppFilter/open-app-filter package/open-app-filter
 #rm -rf OpenAppFilter
 
-git clone --depth=1 https://github.com/vernesong/OpenClash.git OpenClash-packages
-cp -rf OpenClash-packages/luci-app-openclash package/luci-app-openclash
-rm -rf OpenClash-packages
+#git clone --depth=1 https://github.com/vernesong/OpenClash.git OpenClash-packages
+#cp -rf OpenClash-packages/luci-app-openclash package/luci-app-openclash
+#rm -rf OpenClash-packages
 
 #git clone --depth=1 https://github.com/linkease/nas-packages.git nas-packages
 #cp -rf nas-packages/network/services/linkease package/linkease
