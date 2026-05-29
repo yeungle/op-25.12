@@ -36,8 +36,8 @@ cp -rf kenzok8-packages/ddnsto package/ddnsto
 cp -rf kenzok8-packages/luci-app-ddnsto package/luci-app-ddnsto
 cp -rf kenzok8-packages/wrtbwmon package/wrtbwmon
 cp -rf kenzok8-packages/luci-app-wrtbwmon package/luci-app-wrtbwmon
-#cp -rf kenzok8-packages/adguardhome package/adguardhome
-#cp -rf kenzok8-packages/luci-app-adguardhome package/luci-app-adguardhome
+cp -rf kenzok8-packages/adguardhome package/adguardhome
+cp -rf kenzok8-packages/luci-app-adguardhome package/luci-app-adguardhome
 cp -rf kenzok8-packages/fastnet package/fastnet
 cp -rf kenzok8-packages/luci-app-fastnet package/luci-app-fastnet
 cp -rf kenzok8-packages/linkease package/linkease
