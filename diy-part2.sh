@@ -48,7 +48,7 @@ cp -rf kenzok8-packages/oaf package/oaf
 cp -rf kenzok8-packages/open-app-filter package/open-app-filter
 rm -rf kenzok8-packages
 
-git clone --depth=1 -b openwrt-23.05 https://github.com/coolsnowwolf/luci package/luci-app-accesscontrol
+git clone --depth=1 -b openwrt-23.05 https://github.com/coolsnowwolf/luci package/luci-app
 
 #git clone --depth=1 https://github.com/jjm2473/luci-app-autotimeset.git package/luci-app-autotimeset
 
