@@ -73,12 +73,12 @@ jobs:
         #sudo mkdir -p /${{ env.DIY_WORK }}
         #sudo chown ${USER}:${GROUPS} /${{ env.DIY_WORK }}
 
-    - name: Install Ruby
-      run: |
-        sudo apt update
-        sudo apt install -y ruby-full ruby-dev
-        ruby -v
-        ruby -e "require 'optparse'; puts 'optparse OK'"
+    #- name: Install Ruby
+      #run: |
+        #sudo apt update
+        #sudo apt install -y ruby-full ruby-dev
+        #ruby -v
+        #ruby -e "require 'optparse'; puts 'optparse OK'"
     
     - name: 克隆源码
       run: |
