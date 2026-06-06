@@ -22,7 +22,7 @@
 # Modify version number
 #sed -i "s/^VERSION_NUMBER:=.*/VERSION_NUMBER:=25.12-$(date +%Y%m%d)/" include/version.mk
 
-#rm -rf feeds/luci/applications/luci-app-adguardhome
+rm -rf feeds/luci/applications/luci-app-adguardhome
 #rm -rf feeds/packages/net/adguardhome
 #rm -rf package/feeds/packages/adguardhome
 #rm -rf package/feeds/luci/luci-app-adguardhome
@@ -31,22 +31,22 @@
 
 #git clone https://github.com/kenzok78/luci-app-adguardhome.git package/luci-app-adguardhome
 
-#git clone --depth=1 https://github.com/kenzok8/small-package.git kenzok8-packages
-#cp -rf kenzok8-packages/ddnsto package/ddnsto
-#cp -rf kenzok8-packages/luci-app-ddnsto package/luci-app-ddnsto
-#cp -rf kenzok8-packages/wrtbwmon package/wrtbwmon
-#cp -rf kenzok8-packages/luci-app-wrtbwmon package/luci-app-wrtbwmon
+git clone --depth=1 https://github.com/kenzok8/small-package.git kenzok8-packages
+cp -rf kenzok8-packages/ddnsto package/ddnsto
+cp -rf kenzok8-packages/luci-app-ddnsto package/luci-app-ddnsto
+cp -rf kenzok8-packages/wrtbwmon package/wrtbwmon
+cp -rf kenzok8-packages/luci-app-wrtbwmon package/luci-app-wrtbwmon
 #cp -rf kenzok8-packages/adguardhome package/adguardhome
-#cp -rf kenzok8-packages/luci-app-adguardhome package/luci-app-adguardhome
-#cp -rf kenzok8-packages/fastnet package/fastnet
-#cp -rf kenzok8-packages/luci-app-fastnet package/luci-app-fastnet
+cp -rf kenzok8-packages/luci-app-adguardhome package/luci-app-adguardhome
+cp -rf kenzok8-packages/fastnet package/fastnet
+cp -rf kenzok8-packages/luci-app-fastnet package/luci-app-fastnet
 #cp -rf kenzok8-packages/linkease package/linkease
 #cp -rf kenzok8-packages/linkmount package/linkmount
 #cp -rf kenzok8-packages/luci-app-linkease package/luci-app-linkease
 #cp -rf kenzok8-packages/luci-app-oaf package/luci-app-oaf
 #cp -rf kenzok8-packages/oaf package/oaf
 #cp -rf kenzok8-packages/open-app-filter package/open-app-filter
-#rm -rf kenzok8-packages
+rm -rf kenzok8-packages
 
 #git clone --depth=1 -b openwrt-23.05 https://github.com/coolsnowwolf/luci package/luci-app-accesscontrol
 
