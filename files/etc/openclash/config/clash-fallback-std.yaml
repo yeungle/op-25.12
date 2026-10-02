@@ -139,7 +139,6 @@ default: &default
     - 所有-手动
     - 香港-自动
     - 香港-故转
-    - 新加坡-故转
     - 美国-故转
     - 拒绝
 
@@ -197,26 +196,6 @@ proxy-groups:
     tolerance: 50
     interval: 180
     filter: "(?=.*(广港|香港|HK|Hong Kong|🇭🇰|HongKong)).*$"
- 
-  # 新加坡组
-
-  - name: 新加坡-故转
-    type: fallback
-    interval: 180
-    lazy: false
-    proxies:
-      - 新加坡-手动
-      - 新加坡-自动
-  - name: 新加坡-手动
-    type: select
-    include-all: true
-    filter: "(?=.*(广新|新加坡|SG|坡|狮城|🇸🇬|Singapore)).*$"
-  - name: 新加坡-自动
-    type: url-test
-    include-all: true
-    tolerance: 50
-    interval: 180
-    filter: "(?=.*(广新|新加坡|SG|坡|狮城|🇸🇬|Singapore)).*$"
 
   # 美国组
 
